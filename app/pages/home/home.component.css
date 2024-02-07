@@ -166,8 +166,12 @@
         font-style: italic;
         font-size: 2rem;
     }
+    .img-container{
+        width: 50%;
+    }
     .img {
-        width: 100%;
+        padding: 2rem;
+        width: 70%;
         border-radius: 50px;
         height: 100%;
         
