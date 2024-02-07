@@ -1,0 +1,256 @@
+.About h2 {
+    text-align: center;
+}
+
+.Hello {
+    background-color: #231B3B;
+    height: 40%;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 0 20px;
+}
+
+.txt {
+    padding: 1rem;
+}
+
+.txt h2,
+span,
+p {
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px;
+}
+
+.txt span {
+    font-style: italic;
+    /* font-size: large; */
+    /* text-align: center; */
+}
+
+#Presentation {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container {
+    width: 50%;
+    margin: auto;
+}
+
+.img {
+    width: 100%;
+}
+
+#buttons {
+    padding: 2rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#buttons a {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.carousel-item i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.contenedor-del-boton {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    color: black;
+    background-color: black;
+    border-radius: 40px;
+}
+
+.cv {
+    background-color: #231B3B;
+    color: whitesmoke;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+#about-me {
+    margin: 2rem;
+}
+
+#about-me article {
+    background-color: #231B3B !important;
+    color: whitesmoke;
+    padding: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#about-me h3,
+p {
+    text-align: center;
+}
+
+
+
+@media(min-width:768px) {
+    .Hello {
+        width: 80%;
+        height: 40%;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 7rem;
+    }
+
+    #Presentation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .txt {
+        margin-top: 3.5rem;
+    }
+
+    .txt h2 {
+        text-align: left;
+    }
+
+    .img {
+        width: 100%;
+        border-radius: 50px;
+        height: 100%;
+    }
+
+    .img-container {
+        width: 100%;
+    }
+}
+
+@media(min-width:1024px) {
+
+
+    .About h2 {
+        margin-top: 2rem;
+    }
+    #about-me {
+        display: flex;
+    }
+    #about-me article {
+        background-color: #231B3B !important;
+        color: whitesmoke;
+        margin: 2rem;
+        border-radius: 20px;
+    }
+
+    .Hello {
+        width: 80%;
+        height: 40%;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 7rem
+    }
+
+    #Presentation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .txt {
+        border-radius: 20px;
+        color: whitesmoke;
+        text-align: left;
+    }
+
+    .txt p {
+        font-size: 22px;
+        text-align: left;
+    }
+
+    span {
+        text-align: left;
+        font-style: italic;
+        font-size: 2rem;
+    }
+
+    .img-container {
+        width: 50%;
+    }
+
+    .img {
+        padding: 2rem;
+        width: 70%;
+        border-radius: 50px;
+        height: 100%;
+
+    }
+
+
+    .carousel-item i {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 7.5%;
+        height: auto;
+        border-radius: 20px;
+        padding: 10px;
+        font-size: 8rem;
+        height: auto;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: #231B3B !important;
+        color: black !important;
+    }
+
+    .btn {
+        background-color: #231B3B;
+        margin: 20px;
+    }
+
+    .cv {
+        margin-top: 2rem;
+        background-color: #231B3B;
+        color: whitesmoke;
+        padding: 1rem;
+        border-radius: 20px;
+    }
+
+
+
+
+
+    #about-me h3 {
+        text-align: center;
+    }
+
+    .contenedor-del-boton {
+        display: flex;
+        justify-content: center;
+    }
+
+    #about-me p {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    #buttons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #buttons a {
+        font-size: 1.5rem;
+        border: none;
+        margin-top: 4rem;
+        background-color: whitesmoke;
+    }
+}
