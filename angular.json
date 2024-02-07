@@ -24,6 +24,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/app/pages",
+              "src/app/pages/Images/CV",
               "src/app/pages/Images/Proyectos",
               "src/app/pages/Images/Tecnologias"
             ],
