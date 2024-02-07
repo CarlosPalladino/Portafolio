@@ -63,14 +63,17 @@ p {
         color: black;
 
     }
+
     form button {
         align-items: center;
     }
 
 }
-@media(min-width: 1024px) {
-.body {
-    display: flex;
-}
 
+@media(min-width: 1024px) {
+    .body {
+        display: flex;
+        padding: 2rem;
+    }
+ 
 }
