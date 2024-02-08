@@ -161,12 +161,14 @@ p {
     #Presentation {
         display: flex;
         flex-direction: row;
+
     }
 
     .txt {
         border-radius: 20px;
         color: whitesmoke;
         text-align: left;
+        margin-top: 8rem;
     }
 
     .txt p {
