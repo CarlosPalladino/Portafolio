@@ -34,7 +34,6 @@ p {
 
     .body {
         justify-content: space-around;
-        /* height:5vh; */
     }
 
     body,
@@ -74,7 +73,7 @@ p {
 @media(min-width: 1024px) {
     .body {
         display: flex;
-        padding: 2rem;
+        margin: 4rem;
     }
  
 }
