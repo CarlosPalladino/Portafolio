@@ -1,7 +1,8 @@
 .body {
     text-align: center;
 }
-
+.card-body {
+ }
 #Proyectos article {
     display: block;
     margin: 2rem;

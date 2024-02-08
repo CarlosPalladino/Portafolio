@@ -1,7 +1,7 @@
 <div class="body">
 
     <h2>Proyectos</h2>
-
+<!-- 
     <div id="Proyectos">
         <article>
 
@@ -57,6 +57,83 @@
             </div>
         </article>
     </div>
+ -->
+<style>
+    /* CSS para el efecto hover */
+    .card {
+        position: relative;
+    }
+
+    .card-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+    }
+
+    .card:hover .card-text {
+        max-height: 200px; /* Ajusta este valor según sea necesario */
+        opacity: 1;
+    }
+
+    .card-title, .card-text {
+        color: whitesmoke !important;
+        font-style: italic;
+        background-color: #231B3B;
+
+    }
+
+    .card:hover .fecha {
+        opacity: 0;
+    }
+
+    .card-body {
+        background-color: #231B3B;
+    }
+
+</style>
+
+<div id="Proyectos">
+    <article>
+        <div class="card" style="width: 18rem;">
+            <img src="app/pages/Images/Proyectos/Api.jpg" class="card-img-top" alt="PokeImg">
+            <div class="card-body">
+                <h5 class="card-title" style="color: black; font-style: italic;"><a href="https://github.com/CarlosPalladino/Poke-web" target="_blank">PokeApp</a></h5>
+                <h5 class="card-title fecha" style="color: black; font-style: italic;">07/2023-08/2023</h5>
+                <p class="card-text objetivo" style="color: black; font-style: italic; margin-top: 10px;">Armé una Api Rest para aprender e implementar .Netcore, migrar una base de datos usando Entity Framework y el uso de DTOS y AutoMapper para manejar datos.</p>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <div class="card" style="width: 18rem;">
+            <img src="app/pages/Images/Proyectos/ProyectoMaxiProgramaNivel3.jpg" class="card-img-top" alt="Maxi2">
+            <div class="card-body">
+                <h5 class="card-title" style="color: black; font-style: italic;"><a href="https://github.com/CarlosPalladino/TpFinalNivel3_Palladino" target="_blank">Tiendilla</a></h5>
+                <h5 class="card-title fecha" style="color: black; font-style: italic;">06/2023-07/2023</h5>
+                <p class="card-text objetivo" style="color: black; font-style: italic; margin-top: 10px;">Una web estática que le permita a los administradores gestionar sus productos y su visualización.</p>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <div class="card" style="width: 18rem;">
+            <img src="app/pages/Images/Proyectos/DynosApp.jpg" class="card-img-top" alt="Maxi2">
+            <div class="card-body">
+                <h5 class="card-title" style="color: black; font-style: italic;"><a href="https://github.com/CarlosPalladino/DynosGym" target="_blank">DynosApp</a></h5>
+                <h5 class="card-title fecha" style="color: black; font-style: italic;">04/2023-05/2023</h5>
+                <p class="card-text objetivo" style="color: black; font-style: italic; margin-top: 10px;">Diseñé y desarrollé una aplicación de escritorio WinForms aplicando varias vistas con su propia funcionalidad.</p>
+            </div>
+        </div>
+    </article>
+</div>
+
 
 
 </div>
