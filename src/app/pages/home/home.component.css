@@ -10,21 +10,20 @@
 }
 
 .txt {
+    margin-top: 4px;
     padding: 1rem;
+    text-align: center;
 }
 
-.txt h2,
+.txt h3,
 span,
 p {
     color: whitesmoke;
-    text-align: center;
-    padding: 5px;
 }
 
 .txt span {
     font-style: italic;
-    /* font-size: large; */
-    /* text-align: center; */
+    font-weight: bold;
 }
 
 #Presentation {
@@ -57,7 +56,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 96%;
     height: 100px;
 }
 
@@ -71,6 +70,13 @@ p {
     color: black;
     background-color: black;
     border-radius: 40px;
+}
+
+.carousel-item i {
+    font-size: 5rem;
+    width: 100%;
+
+
 }
 
 .cv {
@@ -93,60 +99,71 @@ p {
     border-radius: 20px;
 }
 
-#about-me h3,
-p {
+#about-me h3
+{
     text-align: center;
 }
 
 
 
 @media(min-width:768px) {
-    .Hello {
-        width: 80%;
-        height: 40%;
-        border-radius: 20px;
-        margin: auto;
-        margin-top: 7rem;
-    }
+
 
     #Presentation {
         display: flex;
         flex-direction: row;
     }
 
+    /* .txt h2 {
+        text-align: left;
+    } */
+
     .txt {
-        margin-top: 3.5rem;
+        margin-top: 7.5rem;
+        text-align: left;
+
     }
 
-    .txt h2 {
-        text-align: left;
+
+    .img-container {
+        width: 50%;
     }
 
     .img {
-        width: 100%;
+        width: 90%;
         border-radius: 50px;
         height: 100%;
     }
 
-    .img-container {
+    .carousel-item i {
+        font-size: 8rem;
         width: 100%;
     }
+
 }
 
 @media(min-width:1024px) {
 
-
     .About h2 {
         margin-top: 2rem;
     }
+
     #about-me {
         display: flex;
     }
+
     #about-me article {
         background-color: #231B3B !important;
         color: whitesmoke;
         margin: 2rem;
         border-radius: 20px;
+    }
+
+    .txt,
+    h2 {
+        margin-top: 7.5rem;
+        text-align: left;
+
     }
 
     .Hello {
@@ -164,20 +181,9 @@ p {
 
     }
 
-    .txt {
-        border-radius: 20px;
-        color: whitesmoke;
-        text-align: left;
-        margin-top: 8rem;
-    }
 
-    .txt p {
-        font-size: 22px;
-        text-align: left;
-    }
 
     span {
-        text-align: left;
         font-style: italic;
         font-size: 22px;
     }
@@ -193,7 +199,6 @@ p {
         height: 100%;
 
     }
-
 
     .carousel-item i {
         display: block;
@@ -213,11 +218,6 @@ p {
         color: black !important;
     }
 
-    .btn {
-        background-color: #231B3B;
-        margin: 20px;
-    }
-
     .cv {
         margin-top: 2rem;
         background-color: #231B3B;
@@ -225,10 +225,6 @@ p {
         padding: 1rem;
         border-radius: 20px;
     }
-
-
-
-
 
     #about-me h3 {
         text-align: center;
