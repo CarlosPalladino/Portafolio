@@ -99,8 +99,7 @@ p {
     border-radius: 20px;
 }
 
-#about-me h3
-{
+#about-me h3 {
     text-align: center;
 }
 
@@ -145,7 +144,26 @@ p {
 @media(min-width:1024px) {
 
     .About h2 {
-        margin-top: 2rem;
+
+        margin-top: 5rem;
+        text-decoration: none;
+
+    }
+
+    .About h2:hover {
+        text-decoration: underline;
+        color: #231B3B;
+    }
+
+    .About h3 {
+
+        color: white;
+        text-decoration: none;
+    }
+
+    .About h3:hover {
+        color: white;
+        text-decoration: underline;
     }
 
     #about-me {
@@ -159,11 +177,16 @@ p {
         border-radius: 20px;
     }
 
-    .txt,
-    h2 {
-        margin-top: 7.5rem;
-        text-align: left;
 
+
+    .txt h3 {
+
+        margin-top: 3.5rem;
+        text-align: left;
+    }
+
+    .txt p {
+        font-size: 21px;
     }
 
     .Hello {
@@ -180,8 +203,6 @@ p {
         flex-direction: row;
 
     }
-
-
 
     span {
         font-style: italic;
