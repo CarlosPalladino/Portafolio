@@ -145,7 +145,7 @@ p {
 @media(min-width:1024px) {
 
     .About h2 {
-        margin-top: 2rem;
+        margin-top: 5rem;
     }
 
     #about-me {
@@ -160,10 +160,13 @@ p {
     }
 
     .txt,
-    h2 {
+    h3 {
         margin-top: 7.5rem;
         text-align: left;
-
+    }
+    .txt p{
+        font-size: 21px;
+        
     }
 
     .Hello {
@@ -180,8 +183,6 @@ p {
         flex-direction: row;
 
     }
-
-
 
     span {
         font-style: italic;
