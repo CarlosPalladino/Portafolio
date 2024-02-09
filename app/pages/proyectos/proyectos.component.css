@@ -141,6 +141,11 @@ a:hover {
         border: none;
     }
 
+    .card-body, p {
+        margin: auto;
+        width: 70%;
+    }
+
     .card-body,
     h5,
     p {
