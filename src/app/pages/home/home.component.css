@@ -1,5 +1,7 @@
 .About h2 {
     text-align: center;
+    margin-top: 2rem;
+
 }
 
 .Hello {
@@ -12,16 +14,19 @@
 .txt {
     margin-top: 4px;
     padding: 1rem;
+    color: whitesmoke;
+
     text-align: center;
 }
 
-.txt h3,
-span,
-p {
-    color: whitesmoke;
+.txt 
+{
+    font-style: italic;
+    text-align: center;
+
 }
 
-.txt span {
+.txt h4 {
     font-style: italic;
     font-weight: bold;
 }
@@ -38,13 +43,15 @@ p {
 
 .img {
     width: 100%;
+        border-radius: 10px;
+
 }
 
 #buttons {
     padding: 2rem;
     margin: 2rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 #buttons a {
@@ -103,8 +110,6 @@ p {
     text-align: center;
 }
 
-
-
 @media(min-width:768px) {
 
 
@@ -113,11 +118,8 @@ p {
         flex-direction: row;
     }
 
-    /* .txt h2 {
-        text-align: left;
-    } */
-
-    .txt {
+     
+    .txt  {
         margin-top: 7.5rem;
         text-align: left;
 
@@ -135,7 +137,7 @@ p {
     }
 
     .carousel-item i {
-        font-size: 8rem;
+        font-size: 7rem;
         width: 100%;
     }
 
@@ -181,7 +183,7 @@ p {
 
     .txt h3 {
 
-        margin-top: 3.5rem;
+        margin-top: 2.5rem;
         text-align: left;
     }
 
