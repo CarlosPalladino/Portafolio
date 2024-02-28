@@ -5,25 +5,27 @@
 #Proyectos article {
     display: block;
     color: whitesmoke;
+    padding: 2rem;
     border-radius: 20px;
     transition: 0.3s;
     padding: 10px;
-
+    border-radius: 20px;
+    margin-top: 2rem;
 }
 
 .card {
     position: relative;
     border: none !important;
-    /* background-color: #231b3b;
-    border-radius: 20px; */
+    background-color: #231B3B;
+    
 }
 
 .card-text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.8);
+    /* position: absolute; */
+    /* bottom: 0; */
+    text-align: center; /* Centra el texto horizontalmente */
+    /* left: 0; */
+    /* right: 0; */
     padding: 10px;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
@@ -33,24 +35,21 @@
 
 .card:hover .card-text {
     max-height: 200px;
-    /* Ajusta este valor según sea necesario */
+    background-color: #231B3B;
+    color: whitesmoke;
+    border-radius: 10px;
     opacity: 1;
 }
 
 .card-title,
 .card-text {
-    color: whitesmoke !important;
+    /* color: whitesmoke !important; */
     font-style: italic;
-    background-color: #231b3b;
+    /* background-color: #231b3b; */
 }
 
 .card:hover .fecha {
     opacity: 0;
-}
-
-.card-body {
-    background-color: #231b3b;
-    border-radius: 10px 10px;
 }
 
 
@@ -101,8 +100,7 @@ a:hover {
 
     #Proyectos article {
         display: flex;
-        padding: 2rem;
-        margin-top: 2rem;
+        border-radius: 20px;
         transition: 0.3s;
     }
 
@@ -110,11 +108,12 @@ a:hover {
 
     #Proyectos article h4 {
         font-style: italic;
+        
     }
 
     #Proyectos article p {
         font-size: 20px;
-        padding: 3px;
+        text-align: center;
     }
 
     .img-container {
@@ -136,13 +135,25 @@ a:hover {
 }
 
 @media (min-width: 1024px) {
+    
+
+    
+    
     .body h2 {
 
         margin-top: 5rem;
         text-decoration: none;
 
     }
-
+    .card-text {
+        display: none; /* Ocultar el texto por defecto */
+    }
+    
+    .card:hover .card-text {
+        display: block; /* Mostrar el texto al pasar el mouse sobre la tarjeta */
+        text-align: center;
+    }
+    
     .body h2:hover {
         text-decoration: underline;
         color: #231B3B;
@@ -193,6 +204,7 @@ a:hover {
 
     .card-body:hover {
         padding: 1rem;
+        text-align: center;
     }
 
     .img {

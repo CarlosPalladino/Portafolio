@@ -44,6 +44,7 @@
 .img {
     width: 100%;
         border-radius: 10px;
+        /* filter:drop-shadow(10px 10px 10px white) */
 
 }
 
@@ -238,7 +239,7 @@
         width: 70%;
         border-radius: 50px;
         height: 100%;
-
+        margin-top: 4rem;
     }
 
      .carousel-item img {
@@ -253,16 +254,7 @@
         height: auto;
     } 
 
-    /* .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        background-color: #231B3B !important;
-        color: black !important;
-    } */
-    /* .carousel-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } */
+   
     
     .cv {
         margin-top: 2rem;
