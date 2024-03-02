@@ -7,14 +7,50 @@
 }
 
 
-.contact {
-    margin-top: 3rem;
-    color: whitesmoke;
+.contacto {
     text-align: center;
     height: 15%;
     padding: 2rem;
+    margin-top: 2rem;
 }
 
+.contacto article a i {
+    margin-right: 10px; /* Puedes ajustar el valor del margen según sea necesario */
+}
+
+.contacto article {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6px 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+#linkedin {
+    display: flex;
+    background: #00a0dc;
+    justify-content: space-around;
+}
+
+#github {
+    display: flex;
+    justify-content: space-around;
+
+
+    background: #373b41;
+}
+
+#emails {
+    background: #e53e3e;
+}
+
+.contacto a {
+    color: whitesmoke;
+    text-decoration: none;
+
+}
 
 .form {
     margin-top: 3rem;
@@ -47,8 +83,18 @@ p {
         margin-top: 8rem;
         padding: 4rem;
         height: 25%;
+        gap: 1rem;
+    
         border-radius: 20px;
         font-size: 22px;
+    }
+
+    #linkedin,
+    #github,
+    #emails {
+        width: 50%;
+        margin: auto;
+        margin-top: 2rem;
     }
 
     .form {
@@ -71,7 +117,27 @@ p {
 @media(min-width: 1024px) {
     .body {
         display: flex;
-        margin: 4rem;
+        margin: auto;
+        /* flex-direction: column; */
+        margin: 2rem;
+        border-radius: 20px;
     }
- 
+
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        gap: 1rem;
+        justify-content: space-around;
+        color: #fff;
+        margin: auto;
+    }
+
+    .form {
+        margin: auto;
+        display: flex;
+        width: 30%;
+        border-radius: 2px;
+    }
 }

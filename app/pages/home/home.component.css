@@ -5,26 +5,27 @@
 }
 
 .Hello {
-    background-color: #231B3B;
+    /* background-color: #231B3B; */
     height: 40%;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 0 0 0 20px;
+    /* box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2); */
+    /* border-radius: 0 0 0 20px; */
 }
 
 .txt {
     margin-top: 4px;
-    padding: 1rem;
-    color: whitesmoke;
-
+    padding: 2rem;
     text-align: center;
-}
-
-.txt 
-{
     font-style: italic;
     text-align: center;
+    background-color: #231B3B;
+    color: whitesmoke;
+    margin: 2rem;
+    border-radius: 20px;
+
 
 }
+
+
 
 .txt h4 {
     font-style: italic;
@@ -43,8 +44,9 @@
 
 .img {
     width: 100%;
-        border-radius: 10px;
-        /* filter:drop-shadow(10px 10px 10px white) */
+    border-radius: 50%;
+    background-color: #231B3B;
+    margin-top: 1rem;
 
 }
 
@@ -52,12 +54,14 @@
     padding: 2rem;
     margin: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #buttons a {
     background-color: whitesmoke;
-    color: black;
+    color: whitesmoke;
+    border: none;
+    background-color: #231B3B;
 }
 
 .carousel-item img {
@@ -70,7 +74,7 @@
     padding: 10px;
     font-size: 8rem;
     height: auto;
-} 
+}
 
 
 .contenedor-del-boton {
@@ -123,15 +127,19 @@
 
     #Presentation {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        /* flex-direction: row; */
     }
 
-     
-    .txt  {
-        margin-top: 7.5rem;
-        text-align: left;
+
+    .txt {
+        margin-top: 1rem;
+        text-align: center;
+        
+        color: whitesmoke;
 
     }
+
     .carousel-item img {
         display: block;
         margin-left: auto;
@@ -142,11 +150,11 @@
         padding: 10px;
         font-size: 8rem;
         height: auto;
-    } 
+    }
 
 
     .img-container {
-        width: 50%;
+        width: 43%;
     }
 
     .img {
@@ -164,56 +172,43 @@
 
 @media(min-width:1024px) {
 
-    .About h2 {
+    About h2 {
 
         margin-top: 5rem;
         text-decoration: none;
 
     }
+    .Hello{
+        background-color: #231B3B !important;
 
-    .About h2:hover {
+    }
+    .txt , txt h3 ,txt h4{
+        margin-top: 4rem;
+        margin: auto;
+        
+        text-align: left ;
+    }
+    .txt p{
+        font-size: 22px;
+        font-style: oblique;
+    }
+    .About h3:hover {
         text-decoration: underline;
         color: #231B3B;
     }
-
-    .About h3 {
-
-        color: white;
-        text-decoration: none;
-    }
-
-    .About h3:hover {
-        color: white;
-        text-decoration: underline;
-    }
-
     #about-me {
         display: flex;
     }
 
     #about-me article {
-        background-color: #231B3B !important;
         color: whitesmoke;
         margin: 2rem;
         border-radius: 20px;
     }
 
-
-
-    .txt h3 {
-
-        margin-top: 2.5rem;
-        text-align: left;
-    }
-
-    .txt p {
-        font-size: 21px;
-    }
-
     .Hello {
         width: 80%;
         height: 40%;
-        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
         margin: auto;
         margin-top: 7rem
@@ -242,7 +237,7 @@
         margin-top: 4rem;
     }
 
-     .carousel-item img {
+    .carousel-item img {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -252,10 +247,10 @@
         padding: 10px;
         font-size: 8rem;
         height: auto;
-    } 
+    }
 
-   
-    
+
+
     .cv {
         margin-top: 2rem;
         background-color: #231B3B;
@@ -273,10 +268,7 @@
         justify-content: center;
     }
 
-    #about-me p {
-        font-size: 20px;
-        text-align: left;
-    }
+   
 
     #buttons {
         display: flex;
@@ -284,9 +276,10 @@
     }
 
     #buttons a {
-        font-size: 1.5rem;
+        font-size: 1rem;
         border: none;
         margin-top: 4rem;
+        color: #231B3B;
         background-color: whitesmoke;
     }
 }

@@ -1,2 +1,6 @@
 .navbar-brand{
 align-items: center;}
+span{
+    font-style: italic;
+    color:#231B3B;
+}

@@ -12,40 +12,32 @@
     border-radius: 20px;
     margin-top: 2rem;
 }
-
+.card-body span{
+    color: yellow !important;
+    font-style: italic;
+}
 .card {
     position: relative;
     border: none !important;
+    text-align: left ;
     background-color: #231B3B;
     
 }
-
+.card img{
+    object-fit: cover;
+}
 .card-text {
-    /* position: absolute; */
-    /* bottom: 0; */
-    text-align: center; /* Centra el texto horizontalmente */
-    /* left: 0; */
-    /* right: 0; */
-    padding: 10px;
+   
+    padding: 5px;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
     max-height: 0;
     opacity: 0;
 }
-
-.card:hover .card-text {
-    max-height: 200px;
-    background-color: #231B3B;
-    color: whitesmoke;
-    border-radius: 10px;
-    opacity: 1;
-}
-
 .card-title,
 .card-text {
-    /* color: whitesmoke !important; */
     font-style: italic;
-    /* background-color: #231b3b; */
+    text-align: left ;
 }
 
 .card:hover .fecha {
@@ -58,7 +50,7 @@ h4,
 h5 {
     text-align: center;
     color: whitesmoke;
-    font-style: italic;
+    /* font-style: italic; */
     padding: 4px;
 
 }
