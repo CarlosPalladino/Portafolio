@@ -129,7 +129,11 @@ a:hover {
 @media (min-width: 1024px) {
     
 
-    
+    #img-tecnology{
+        width: 20%;
+        margin-top: 2rem;
+        padding-top: 1rem;
+    }
     
     .body h2 {
 
@@ -143,7 +147,7 @@ a:hover {
     
     .card:hover .card-text {
         display: block; /* Mostrar el texto al pasar el mouse sobre la tarjeta */
-        text-align: center;
+        /* text-align: center; */
     }
     
     .body h2:hover {
@@ -159,10 +163,12 @@ a:hover {
         margin: auto;
         width: 70%;
     }
-
+.card-title{
+    text-align: center;
+}
     .card-body,
-    h5,
-    p {
+    h5
+    {
         text-align: center;
         padding: 1rem;
 
@@ -194,10 +200,10 @@ a:hover {
 
     }
 
-    .card-body:hover {
+    /* .card-body:hover {
         padding: 1rem;
         text-align: center;
-    }
+    } */
 
     .img {
         width: 70%;
