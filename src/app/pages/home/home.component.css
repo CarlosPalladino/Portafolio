@@ -172,6 +172,12 @@
 
 @media(min-width:1024px) {
 
+    .About h1 {
+        text-align: center;
+
+        padding: 1rem 
+
+    }
     About h2 {
 
         margin-top: 5rem;
@@ -179,7 +185,7 @@
 
     }
     .Hello{
-        background-color: #231B3B !important;
+        background-color: #7F76C8   !important;
 
     }
     .txt , txt h3 ,txt h4{
@@ -195,6 +201,17 @@
     .About h3:hover {
         text-decoration: underline;
         color: #231B3B;
+    }
+
+    .images{
+        display: flex;
+        justify-content: center;
+
+    }
+    .images img{
+        width: 5%;
+        padding: 1rem;
+
     }
     #about-me {
         display: flex;
