@@ -26,7 +26,9 @@
               "src/app/pages",
               "src/app/pages/Images/CV",
               "src/app/pages/Images/Proyectos",
-              "src/app/pages/Images/Tecnologias"
+              "src/app/pages/Images/Tecnologias",
+              "src/app/pages/Images/herramientas"
+
             ],
             "styles": [
               "src/styles.css",
