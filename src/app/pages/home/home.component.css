@@ -1,14 +1,16 @@
-.About h2 {
-    text-align: center;
-    margin-top: 2rem;
+.About{
+    background-color: #231B3B;
 
 }
 
+.About h2,h1 {
+    text-align: center;
+    margin-top: 2rem;
+    color: #ffff    ;
+}
+
 .Hello {
-    /* background-color: #231B3B; */
     height: 40%;
-    /* box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2); */
-    /* border-radius: 0 0 0 20px; */
 }
 
 .txt {
@@ -21,11 +23,7 @@
     color: whitesmoke;
     margin: 2rem;
     border-radius: 20px;
-
-
 }
-
-
 
 .txt h4 {
     font-style: italic;
@@ -80,14 +78,10 @@
 .contenedor-del-boton {
     text-align: center;
     margin-top: 1rem;
+    color: green;
 }
 
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-    color: black;
-    background-color: black;
-    border-radius: 40px;
-}
+
 
 .carousel-item i {
     font-size: 5rem;
@@ -97,7 +91,6 @@
 }
 
 .cv {
-    background-color: #231B3B;
     color: whitesmoke;
     padding: 1rem;
     border-radius: 20px;
@@ -172,9 +165,9 @@
 
 @media(min-width:1024px) {
 
+
     .About h1 {
         text-align: center;
-
         padding: 1rem 
 
     }
@@ -184,10 +177,7 @@
         text-decoration: none;
 
     }
-    .Hello{
-        background-color: #7F76C8   !important;
-
-    }
+    
     .txt , txt h3 ,txt h4{
         margin-top: 4rem;
         margin: auto;
@@ -199,8 +189,8 @@
         font-style: oblique;
     }
     .About h3:hover {
-        text-decoration: underline;
-        color: #231B3B;
+        text-decoration: 2px underline;
+
     }
 
     .images{
@@ -228,13 +218,16 @@
         height: 40%;
         border-radius: 20px;
         margin: auto;
-        margin-top: 7rem
+        border: 2px solid #fff;
+     ;
     }
 
     #Presentation {
         display: flex;
         flex-direction: row;
-
+        padding: 3rem;
+        text-align: center;
+        
     }
 
     span {
@@ -273,7 +266,6 @@
         background-color: #231B3B;
         color: whitesmoke;
         padding: 1rem;
-        border-radius: 20px;
     }
 
     #about-me h3 {
