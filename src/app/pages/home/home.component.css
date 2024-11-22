@@ -1,5 +1,5 @@
 .About{
-    background-color: #231B3B;
+    background-color:#121212;
 
 }
 
@@ -19,7 +19,7 @@
     text-align: center;
     font-style: italic;
     text-align: center;
-    background-color: #231B3B;
+    /* background-color: #231B3B; */
     color: whitesmoke;
     margin: 2rem;
     border-radius: 20px;
@@ -200,26 +200,19 @@
     }
     .images img{
         width: 5%;
-        padding: 1rem;
+        padding: 1.5rem;
 
     }
+
     #about-me {
         display: flex;
     }
-
-    #about-me article {
-        color: whitesmoke;
-        margin: 2rem;
-        border-radius: 20px;
-    }
-
     .Hello {
         width: 80%;
         height: 40%;
         border-radius: 20px;
         margin: auto;
-        border: 2px solid #fff;
-     ;
+     
     }
 
     #Presentation {
@@ -238,44 +231,34 @@
     .img-container {
         width: 50%;
     }
-
-    .img {
-        padding: 2rem;
-        width: 70%;
-        border-radius: 50px;
-        height: 100%;
-        margin-top: 4rem;
-    }
-
-    .carousel-item img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 10%;
-        height: auto;
-        border-radius: 20px;
-        padding: 10px;
-        font-size: 8rem;
-        height: auto;
-    }
-
-
-
-    .cv {
-        margin-top: 2rem;
-        background-color: #231B3B;
-        color: whitesmoke;
-        padding: 1rem;
-    }
-
+ 
     #about-me h3 {
         text-align: center;
     }
+   
+.contenedor-del-boton {
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+}
 
-    .contenedor-del-boton {
-        display: flex;
-        justify-content: center;
-    }
+.cv {
+    background-color: red;
+    color: whitesmoke;
+    border-radius: 9999px;
+    box-shadow: 0 4px 6px rgba(0, 128, 0, 0.5);
+    justify-content: space-around;
+    cursor: pointer;
+    font-weight: 700;
+    transition: transform 300ms, background-color 300ms;
+}
+
+.cv:hover {
+    transform: scale(1.1);
+    background-color: green;
+}
+
 
    
 
@@ -289,6 +272,6 @@
         border: none;
         margin-top: 4rem;
         color: #231B3B;
-        background-color: whitesmoke;
+        background-color: red;
     }
 }

@@ -1,10 +1,12 @@
 .body {
     text-align: center;
 }
-
+.body h2{
+    text-align: center;
+    color: #fff;
+}
 #Proyectos article {
     display: block;
-    color: whitesmoke;
     padding: 2rem;
     border-radius: 20px;
     transition: 0.3s;
@@ -12,32 +14,33 @@
     border-radius: 20px;
     margin-top: 2rem;
 }
-.card-body span{
-    color: yellow !important;
-    font-style: italic;
-}
+
+
+
 .card {
     position: relative;
     border: none !important;
-    text-align: left ;
-    background-color: #231B3B;
-    
+    text-align: left;
+
 }
-.card img{
+
+/* .card img {
     object-fit: cover;
-}
+} */
+
 .card-text {
-   
+
     padding: 5px;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
     max-height: 0;
     opacity: 0;
 }
+
 .card-title,
 .card-text {
     font-style: italic;
-    text-align: left ;
+    text-align: left;
 }
 
 .card:hover .fecha {
@@ -49,19 +52,20 @@
 h4,
 h5 {
     text-align: center;
-    color: whitesmoke;
-    /* font-style: italic; */
+    color: #fff;
+    font-style: italic;
+    text-align: center;
     padding: 4px;
 
 }
 
 a {
-    color: white;
+    /* color: white; */
     text-decoration: none;
 }
 
 a:hover {
-    color: white;
+    /* color: white; */
     text-decoration: underline;
 }
 
@@ -100,7 +104,7 @@ a:hover {
 
     #Proyectos article h4 {
         font-style: italic;
-        
+
     }
 
     #Proyectos article p {
@@ -126,88 +130,94 @@ a:hover {
     }
 }
 
+
 @media (min-width: 1024px) {
-    
 
-    #img-tecnology{
-        width: 20%;
-        margin-top: 2rem;
-        padding-top: 1rem;
-    }
-    
-    .body h2 {
-        color: #fff;
-        margin-top: 5rem;
-        text-decoration: none;
+  /* Estilo base */
 
-    }
-    .card-text {
-        display: none; /* Ocultar el texto por defecto */
-    }
-    
-    .card:hover .card-text {
-        display: block; /* Mostrar el texto al pasar el mouse sobre la tarjeta */
-        /* text-align: center; */
-    }
-    
-    .body h2:hover {
-        text-decoration: 2px underline;
-        color: #fff;
-    }
-    .card-img-top {
-        padding: 2rem;
-        border: none;
-    }
+  #Proyectos article{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Envía el contenido hacia abajo */
+    height: 100%; /* Asegúrate de que ocupe todo el alto disponible */
+  }
+  .card {
+  margin-top: auto;
+  margin-bottom: 0; /* Para evitar espacio extra debajo */
+}
 
-    .card-body, p {
-        margin: auto;
-        width: 70%;
-    }
-.card-title{
+.project-container {
+    position: relative;
+}
+
+.project-container a {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.project-container .card-body {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    width: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo para mejorar contraste */
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.project-container a:hover + .card-body {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Estilos adicionales opcionales */
+.project-container img {
+    width: 50%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project-container a:hover img {
+    transform: scale(1.05); /* Efecto de zoom en la imagen */
+}
+
+.card-body h5 {
+    margin: 0;
+    font-size: 1.2rem;
     text-align: center;
 }
-    .card-body,
-    h5
-    {
-        text-align: center;
-        padding: 1rem;
 
-    }
 
-    #Proyectos h2,
-    h4,
-    h5 {
-        text-align: center;
-        color: whitesmoke;
-        font-style: italic;
-        padding: 4px;
 
-    }
+.card-body {
+    /* min-height: 150px;  */
+    /* height: auto;  */
+    /* display: flex;  */
+    flex-direction: column; 
+    justify-content: flex-end; 
+    align-items: center; 
+    background-color: transparent; 
+}
 
-    #Proyectos article {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 2rem;
-    }
 
-    .texto {
-        padding: 2rem;
-    }
+.card {
+    padding: 0; /* Ajusta el relleno de la tarjeta */
+    border-radius: 10px; /* Mantén bordes redondeados */
+    background-color: #333; /* Fondo oscuro para contraste (si lo prefieres) */
+    overflow: hidden; /* Asegúrate de que no haya elementos que sobresalgan */
+}
 
-    .img-container {
-        padding: 1rem;
-
-    }
-
-    /* .card-body:hover {
-        padding: 1rem;
-        text-align: center;
-    } */
-
-    .img {
-        width: 70%;
-    }
 
 
 }
+
+
