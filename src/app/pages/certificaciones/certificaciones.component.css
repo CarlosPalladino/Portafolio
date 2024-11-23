@@ -1,0 +1,130 @@
+/* General */
+#experiencia {
+    background-color: #1a202c; /* Fondo oscuro */
+    color: white; /* Texto claro */
+    padding: 2rem 0;
+}
+
+.contenedor {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #f7fafc; /* Blanco */
+}
+
+/* Lista de experiencias */
+.experiencia-lista {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-left: 3px solid #38a169; /* Verde */
+    margin-left: 10%;
+    padding-left: 20px;
+}
+
+.experiencia-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 2rem;
+}
+
+.punto {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #38a169; /* Verde */
+    border-radius: 50%;
+    border: 2px solid white;
+    left: -8px;
+    top: 5px;
+}
+
+/* Información principal */
+.info-principal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.anios {
+    padding: 0.25rem 0.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: #2f855a; /* Verde más oscuro */
+    border-radius: 999px;
+}
+
+.titulo-trabajo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #38a169; /* Verde */
+    margin-left: 0.5rem;
+}
+
+.lugar {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #f6ad55; /* Naranja */
+}
+
+.duracion {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #f6ad55; /* Naranja */
+}
+
+.separador {
+    margin: 0 0.5rem;
+    color: #cbd5e0; /* Gris claro */
+}
+
+/* Detalles */
+.detalles {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.6;
+    white-space: pre-line;
+    color: #e2e8f0; /* Gris claro */
+}
+
+.aptitudes {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: normal;
+    line-height: 1.6;
+    color: #a0aec0; /* Gris intermedio */
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .experiencia-lista {
+        margin-left: 10%;
+        padding-left: 30px;
+    }
+
+    .titulo {
+        font-size: 3rem;
+    }
+
+    .info-principal {
+        font-size: 1.125rem;
+    }
+
+    .titulo-trabajo {
+        font-size: 1.5rem;
+    }
+
+    .detalles {
+        font-size: 1.125rem;
+    }
+}

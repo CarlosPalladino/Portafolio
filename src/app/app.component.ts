@@ -5,6 +5,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { HeaderComponent } from './pages/header/header.component';
+import { ExperienciaComponent } from "./pages/experiencia/experiencia.component";
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -14,7 +15,9 @@ import { HeaderComponent } from './pages/header/header.component';
     HomeComponent,
     ProyectosComponent,
     ContactoComponent,
-    HeaderComponent],
+    HeaderComponent,
+    ExperienciaComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
