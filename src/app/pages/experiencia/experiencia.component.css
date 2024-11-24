@@ -33,6 +33,7 @@
     position: relative;
     margin-bottom: 3rem;
     padding-left: 2rem;
+    list-style-type: none; 
 }
 
 .punto {

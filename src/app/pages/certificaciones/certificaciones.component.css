@@ -32,6 +32,7 @@
 .experiencia-item {
     position: relative;
     margin-bottom: 3rem;
+    list-style-type: none; 
     padding-left: 2rem;
 }
 
@@ -127,4 +128,26 @@
     .detalles {
         font-size: 1.125rem;
     }
+    .certificado {
+        display: inline-block;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem; /* Tamaño de letra pequeño */
+        font-weight: bold;
+        color: white; /* Texto blanco */
+        background-color: #4299e1; /* Azul */
+        border-radius: 999px; /* Bordes redondeados */
+        margin-left: 0.5rem;
+        cursor: pointer;
+        margin-left: auto;
+        
+    }
+    .certificado {
+        text-decoration: none; /* Elimina el subrayado de los enlaces */
+        color: inherit; /* Mantiene el color del enlace igual al del texto circundante */
+    }
+    
+    .certificado:hover {
+        text-decoration: underline; /* Añade subrayado al pasar el mouse */
+    }
+    
 }

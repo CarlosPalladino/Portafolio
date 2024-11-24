@@ -1,17 +1,15 @@
-.About{
-    background-color:#121212;
+.About {
+    background-color: #1a202c;
 
 }
 
-.About h2,h1 {
+.About h2,
+h1 {
     text-align: center;
     margin-top: 2rem;
-    color: #ffff    ;
+    color: #ffff;
 }
 
-.Hello {
-    height: 40%;
-}
 
 .txt {
     margin-top: 4px;
@@ -19,7 +17,6 @@
     text-align: center;
     font-style: italic;
     text-align: center;
-    /* background-color: #231B3B; */
     color: whitesmoke;
     margin: 2rem;
     border-radius: 20px;
@@ -43,7 +40,6 @@
 .img {
     width: 100%;
     border-radius: 50%;
-    background-color: #231B3B;
     margin-top: 1rem;
 
 }
@@ -116,162 +112,197 @@
 }
 
 @media(min-width:768px) {
-
-
     #Presentation {
         display: flex;
         flex-direction: column;
-        /* flex-direction: row; */
-    }
 
+    }
 
     .txt {
         margin-top: 1rem;
         text-align: center;
-        
         color: whitesmoke;
 
     }
 
-    .carousel-item img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 15%;
-        height: auto;
-        border-radius: 20px;
-        padding: 10px;
-        font-size: 8rem;
-        height: auto;
-    }
-
-
     .img-container {
-        width: 43%;
+        width: 100%;
     }
 
     .img {
-        width: 90%;
-        border-radius: 50px;
-        height: 100%;
-    }
-
-    .carousel-item i {
-        font-size: 7rem;
-        width: 100%;
+        width: 10%;
+        border-radius: 50%;
+        background-color: red;
     }
 
 }
 
 @media(min-width:1024px) {
-
-
     .About h1 {
         text-align: center;
-        padding: 1rem 
-
-    }
-    About h2 {
-
-        margin-top: 5rem;
-        text-decoration: none;
-
-    }
-    
-    .txt , txt h3 ,txt h4{
-        margin-top: 4rem;
-        margin: auto;
-        
-        text-align: left ;
-    }
-    .txt p{
-        font-size: 22px;
-        font-style: oblique;
-    }
-    .About h3:hover {
-        text-decoration: 2px underline;
-
-    }
-
-    .images{
-        display: flex;
-        justify-content: center;
-
-    }
-    .images img{
-        width: 5%;
-        padding: 1.5rem;
-
-    }
-
-    #about-me {
-        display: flex;
-    }
-    .Hello {
-        width: 80%;
-        height: 40%;
-        border-radius: 20px;
-        margin: auto;
-     
+        padding: 1rem;
     }
 
     #Presentation {
         display: flex;
-        flex-direction: row;
-        padding: 3rem;
+        flex-direction:
+            row;
+        align-items: center;
+        justify-content: center;
+        /* Centra los elementos horizontalmente */
         text-align: center;
-        
+        padding: 3rem;
     }
 
-    span {
-        font-style: italic;
-        font-size: 22px;
+    .img-containe r {
+        width: auto;
+        /* Ajusta automáticamente el ancho */
+        margin-right: 20px;
+        /* Espacio entre la imagen y el texto */
     }
 
-    .img-container {
-        width: 50%;
+    .img {
+        width: 25%;
+        /* Ajusta el ancho de la imagen */
     }
- 
+
+    .txt {
+        width: auto;
+        /* Ajusta el ancho automáticamente */
+        text-align: center;
+        margin-right: 400px;
+        /* Asegura que haya espacio entre la imagen y el texto */
+    }
+
+    .txt h2 {
+        text-align: center;
+        font-size: 1.5rem;
+        overflow: hidden;
+        border-right: 0.15em solid orange;
+        white-space: nowrap;
+        margin: 0 auto;
+        padding-right: 0.25em;
+        animation: typing 6s steps(30, end), blink-caret 0.80s step-end infinite;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes blink-caret {
+
+        from,
+        to {
+            border-color: transparent;
+        }
+
+        50% {
+            border-color: orange;
+        }
+    }
+
+
+
+    .About h3:hover {
+        text-decoration: 2px underline;
+    }
+
+    .images {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .images img {
+        width: 6%;
+        object-fit: contain;
+        padding: 1.5rem;
+
+    }
+
     #about-me h3 {
         text-align: center;
     }
-   
-.contenedor-del-boton {
-    display: flex;
-    gap: 4rem;
-    margin-bottom: 3rem;
-    justify-content: center;
-}
 
-.cv {
-    background-color: red;
-    color: whitesmoke;
-    border-radius: 9999px;
-    box-shadow: 0 4px 6px rgba(0, 128, 0, 0.5);
-    justify-content: space-around;
-    cursor: pointer;
-    font-weight: 700;
-    transition: transform 300ms, background-color 300ms;
-}
+    .contenedor-del-boton {
+        display: flex;
+        gap: 4rem;
+        margin-bottom: 3rem;
+        justify-content: center;
+    }
 
-.cv:hover {
-    transform: scale(1.1);
-    background-color: green;
-}
+    .cv {
+        background-color: red;
+        color: whitesmoke;
+        border-radius: 9999px;
+        box-shadow: 0 4px 6px rgba(0, 128, 0, 0.5);
+        justify-content: space-around;
+        cursor: pointer;
+        font-weight: 700;
+        transition: transform 300ms, background-color 300ms;
+    }
 
-
-   
+    .cv:hover {
+        transform: scale(1.1);
+        background-color: green;
+    }
 
     #buttons {
         display: flex;
         justify-content: space-evenly;
     }
 
-    #buttons a {
-        font-size: 1rem;
-        border: none;
-        margin-top: 4rem;
-        color: #231B3B;
-        background-color: red;
+
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
     }
+
+    .images div {
+        position: relative;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .images img {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+    }
+
+    .images img:hover {
+        filter: grayscale(0%);
+        transform: scale(1.5);
+    }
+
+    .images span {
+        display: none;
+        font-size: 0.8rem;
+        color: whitesmoke;
+        position: absolute;
+        /* Posiciona el span de forma absoluta dentro del contenedor */
+        bottom: -20px;
+        /* Ajusta esta posición según sea necesario */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .images div:hover span {
+        display: block;
+        /* Muestra el texto al pasar el mouse */
+        color: orange;
+        transition: color 0.3s ease;
+    }
+
+
 }
