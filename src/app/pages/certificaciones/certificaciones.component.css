@@ -27,6 +27,7 @@
     border-left: 3px solid #38a169; /* Verde */
     margin-left: 10%;
     padding-left: 20px;
+    overflow: hidden; /* Oculta cualquier cosa fuera del contenedor */
 }
 
 .experiencia-item {
@@ -34,8 +35,39 @@
     margin-bottom: 3rem;
     list-style-type: none; 
     padding-left: 2rem;
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateX(-20px); /* Desplaza los elementos hacia la izquierda */
+    animation: aparecer 1s ease-out forwards; /* Animación para hacerlos visibles */
 }
 
+.experiencia-item:nth-child(1) {
+    animation-delay: 0.5s; /* Retraso para el primer elemento */
+}
+
+.experiencia-item:nth-child(2) {
+    animation-delay: 1s; /* Retraso para el segundo elemento */
+}
+
+.experiencia-item:nth-child(3) {
+    animation-delay: 1.5s; /* Retraso para el tercer elemento */
+}
+
+.experiencia-item:nth-child(4) {
+    animation-delay: 2s; /* Retraso para el cuarto elemento */
+}
+
+.experiencia-item:nth-child(5) {
+    animation-delay: 2.5s; /* Retraso para el quinto elemento */
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1; /* Aparece completamente */
+        transform: translateX(0); /* Se posiciona en su lugar original */
+    }
+}
+
+/* Punto indicador */
 .punto {
     position: absolute;
     width: 12px;
@@ -98,12 +130,22 @@
     color: #e2e8f0; /* Gris claro */
 }
 
-.aptitudes {
-    margin-top: 0.5rem;
-    font-size: 0.875rem;
-    font-weight: normal;
-    line-height: 1.6;
-    color: #a0aec0; /* Gris intermedio */
+/* Certificado */
+.certificado {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem; /* Tamaño de letra pequeño */
+    font-weight: bold;
+    color: white; /* Texto blanco */
+    background-color: #4299e1; /* Azul */
+    border-radius: 999px; /* Bordes redondeados */
+    margin-left: 0.5rem;
+    cursor: pointer;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+.certificado:hover {
+    text-decoration: underline; /* Añade subrayado al pasar el mouse */
 }
 
 /* Media Queries */
@@ -128,26 +170,4 @@
     .detalles {
         font-size: 1.125rem;
     }
-    .certificado {
-        display: inline-block;
-        padding: 0.25rem 0.5rem;
-        font-size: 0.875rem; /* Tamaño de letra pequeño */
-        font-weight: bold;
-        color: white; /* Texto blanco */
-        background-color: #4299e1; /* Azul */
-        border-radius: 999px; /* Bordes redondeados */
-        margin-left: 0.5rem;
-        cursor: pointer;
-        margin-left: auto;
-        
-    }
-    .certificado {
-        text-decoration: none; /* Elimina el subrayado de los enlaces */
-        color: inherit; /* Mantiene el color del enlace igual al del texto circundante */
-    }
-    
-    .certificado:hover {
-        text-decoration: underline; /* Añade subrayado al pasar el mouse */
-    }
-    
 }

@@ -18,8 +18,6 @@
     margin-bottom: 2rem;
     color: #f7fafc; /* Blanco */
 }
-
-/* Lista de experiencias */
 .experiencia-lista {
     display: flex;
     flex-direction: column;
@@ -27,30 +25,48 @@
     border-left: 3px solid #38a169; /* Verde */
     margin-left: 10%;
     padding-left: 20px;
+    overflow: hidden; /* Oculta cualquier cosa fuera del contenedor */
 }
 
 .experiencia-item {
     position: relative;
     margin-bottom: 3rem;
-    padding-left: 2rem;
     list-style-type: none; 
-    opacity: 0; /* Initially hidden */
-    transition: opacity 1s ease-in-out; /* Longer transition effect */
+    padding-left: 2rem;
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateX(-20px); /* Desplaza los elementos hacia la izquierda */
+    animation: aparecer 1s ease-out forwards; /* Animación para hacerlos visibles */
 }
 
 .experiencia-item:nth-child(1) {
-    transition-delay: 0.2s; /* Slight delay for the first item */
+    animation-delay: 0.5s; /* Retraso para el primer elemento */
 }
 
 .experiencia-item:nth-child(2) {
-    transition-delay: 0.4s; /* Slight delay for the second item */
+    animation-delay: 1s; /* Retraso para el segundo elemento */
 }
 
-/* Hover effect to reveal items */
-.experiencia-lista:hover .experiencia-item {
-    opacity: 1; /* Make items visible on hover */
+.experiencia-item:nth-child(3) {
+    animation-delay: 1.5s; /* Retraso para el tercer elemento */
 }
 
+.experiencia-item:nth-child(4) {
+    animation-delay: 2s; /* Retraso para el cuarto elemento */
+}
+
+.experiencia-item:nth-child(5) {
+    animation-delay: 2.5s; /* Retraso para el quinto elemento */
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1; /* Aparece completamente */
+        transform: translateX(0); /* Se posiciona en su lugar original */
+    }
+}
+
+
+/* Punto */
 .punto {
     position: absolute;
     width: 12px;
@@ -110,37 +126,4 @@
     font-weight: normal;
     line-height: 1.6;
     white-space: pre-line;
-    color: #e2e8f0; /* Gris claro */
-}
-
-.aptitudes {
-    margin-top: 0.5rem;
-    font-size: 0.875rem;
-    font-weight: normal;
-    line-height: 1.6;
-    color: #a0aec0; /* Gris intermedio */
-}
-
-/* Media Queries */
-@media (min-width: 768px) {
-    .experiencia-lista {
-        margin-left: 10%;
-        padding-left: 30px;
-    }
-
-    .titulo {
-        font-size: 3rem;
-    }
-
-    .info-principal {
-        font-size: 1.125rem;
-    }
-
-    .titulo-trabajo {
-        font-size: 1.5rem;
-    }
-
-    .detalles {
-        font-size: 1.125rem;
-    }
 }
