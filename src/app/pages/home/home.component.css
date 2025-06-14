@@ -13,12 +13,11 @@ h1 {
 
 .txt {
     margin-top: 4px;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
     font-style: italic;
     text-align: center;
     color: whitesmoke;
-    margin: 2rem;
     border-radius: 20px;
 }
 
@@ -26,20 +25,15 @@ h1 {
     font-style: italic;
     font-weight: bold;
 }
-
 #Presentation {
     display: flex;
     flex-direction: column;
+    color:  white;
+    text-align:  center;
 }
-
-.img-container {
-    width: 50%;
-    margin: auto;
-}
-
 .img {
     width: 100%;
-    border-radius: 50%;
+    border-radius: 34%;
     margin-top: 1rem;
 
 }
@@ -87,7 +81,7 @@ h1 {
 }
 
 .cv {
-    color: whitesmoke;
+    color: forestgreen;
     padding: 1rem;
     border-radius: 20px;
 }
@@ -96,6 +90,9 @@ h1 {
     margin: 2rem;
 }
 
+.Intro{
+    color: white;
+}
 #about-me article {
     background-color: #231B3B !important;
     color: whitesmoke;
@@ -238,7 +235,7 @@ h1 {
     }
 
     .cv {
-        background-color: red;
+        background-color: yellow;
         color: whitesmoke;
         border-radius: 9999px;
         box-shadow: 0 4px 6px rgba(0, 128, 0, 0.5);

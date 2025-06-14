@@ -6,8 +6,12 @@ import { CertificacionesComponent } from "../certificaciones/certificaciones.com
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ProyectosComponent,
-    ContactoComponent, ExperienciaComponent, CertificacionesComponent],
+  imports: [
+    ProyectosComponent,
+    ContactoComponent,
+    ExperienciaComponent,
+    CertificacionesComponent
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
