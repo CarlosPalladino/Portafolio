@@ -10,7 +10,6 @@ h1 {
     color: #ffff;
 }
 
-
 .txt {
     margin-top: 4px;
     padding: 1rem;
@@ -107,7 +106,47 @@ h1 {
 #about-me h3 {
     text-align: center;
 }
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 
+.images div {
+    position: relative;
+    text-align: center;
+    margin: 10px;
+}
+
+.images img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.images img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.5);
+}
+
+.images span {
+    display: none;
+    font-size: 0.8rem;
+    color: whitesmoke;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.images div:hover span {
+    display: block;
+    color: orange;
+    transition: color 0.3s ease;
+}
 @media(min-width:768px) {
     #Presentation {
         display: flex;
@@ -119,17 +158,63 @@ h1 {
         margin-top: 1rem;
         text-align: center;
         color: whitesmoke;
+        text-align: center;
+        font-style: italic;
 
     }
-
+    .Intro {
+        text-align: center;
+        font-style: italic;
+        padding: 1rem;
+    }
     .img-container {
         width: 100%;
     }
 
     .img {
-        width: 10%;
-        border-radius: 50%;
-        background-color: red;
+        width: 58%;
+        border-radius: 34%;
+    }
+  .images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .images div {
+        position: relative;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .images img {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+    }
+
+    .images img:hover {
+        filter: grayscale(0%);
+        transform: scale(1.5);
+    }
+
+    .images span {
+        display: none;
+        font-size: 0.8rem;
+        color: whitesmoke;
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .images div:hover span {
+        display: block;
+        color: orange;
+        transition: color 0.3s ease;
     }
 
 }
