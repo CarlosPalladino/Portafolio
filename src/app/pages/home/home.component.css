@@ -220,6 +220,7 @@ h1 {
 }
 
 @media(min-width:1024px) {
+
     .About h1 {
         text-align: center;
         padding: 1rem;
@@ -227,33 +228,21 @@ h1 {
 
     #Presentation {
         display: flex;
-        flex-direction:
-            row;
+        flex-direction:row;
         align-items: center;
         justify-content: center;
-        /* Centra los elementos horizontalmente */
         text-align: center;
-        padding: 3rem;
     }
-
-    .img-containe r {
-        width: auto;
-        /* Ajusta automáticamente el ancho */
-        margin-right: 20px;
-        /* Espacio entre la imagen y el texto */
-    }
-
     .img {
-        width: 25%;
-        /* Ajusta el ancho de la imagen */
+        width: 50%;
+    
     }
 
     .txt {
         width: auto;
-        /* Ajusta el ancho automáticamente */
+        gap: 1rem;
         text-align: center;
-        margin-right: 400px;
-        /* Asegura que haya espacio entre la imagen y el texto */
+
     }
 
     .txt h2 {
@@ -313,15 +302,13 @@ h1 {
     }
 
     .contenedor-del-boton {
-        display: flex;
-        gap: 4rem;
-        margin-bottom: 3rem;
-        justify-content: center;
+        gap: 4rem;      
+      
     }
 
     .cv {
-        background-color: yellow;
-        color: whitesmoke;
+        /* background-color: yellow; */
+        color: forestgreen;
         border-radius: 9999px;
         box-shadow: 0 4px 6px rgba(0, 128, 0, 0.5);
         justify-content: space-around;

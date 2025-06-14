@@ -133,7 +133,7 @@ p {
     .form {
         margin: auto;
         display: flex;
-        width: 30%;
+        /* width: 70%; */
         border-radius: 2px;
     }
 }
