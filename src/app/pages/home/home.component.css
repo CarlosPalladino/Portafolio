@@ -24,12 +24,14 @@ h1 {
     font-style: italic;
     font-weight: bold;
 }
+
 #Presentation {
     display: flex;
     flex-direction: column;
-    color:  white;
-    text-align:  center;
+    color: white;
+    text-align: center;
 }
+
 .img {
     width: 100%;
     border-radius: 34%;
@@ -66,30 +68,27 @@ h1 {
 
 .contenedor-del-boton {
     text-align: center;
-    margin-top: 1rem;
-    color: green;
+    background-color: var(--orange-red);
+    font-size: var(--fs-14);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 22px;
+    box-shadow: 6px 6px 0 -1px var(--shadow-color, var(--jet));
+    transition: var(--transition-1);
 }
-
-
-
 .carousel-item i {
     font-size: 5rem;
     width: 100%;
-
-
 }
-
 .cv {
     color: forestgreen;
     padding: 1rem;
     border-radius: 20px;
 }
-
 #about-me {
     margin: 2rem;
 }
-
-.Intro{
+.Intro {
     color: white;
 }
 #about-me article {
@@ -106,6 +105,7 @@ h1 {
 #about-me h3 {
     text-align: center;
 }
+
 .images {
     display: flex;
     flex-wrap: wrap;
@@ -116,13 +116,12 @@ h1 {
 .images div {
     position: relative;
     text-align: center;
-    margin: 10px;
 }
 
 .images img {
     filter: grayscale(100%);
     transition: filter 0.3s ease;
-    width: 80px;
+    width: 60px;
     height: 80px;
     object-fit: contain;
 }
@@ -147,6 +146,7 @@ h1 {
     color: orange;
     transition: color 0.3s ease;
 }
+
 @media(min-width:768px) {
     #Presentation {
         display: flex;
@@ -162,11 +162,13 @@ h1 {
         font-style: italic;
 
     }
+
     .Intro {
         text-align: center;
         font-style: italic;
         padding: 1rem;
     }
+
     .img-container {
         width: 100%;
     }
@@ -175,7 +177,8 @@ h1 {
         width: 58%;
         border-radius: 34%;
     }
-  .images {
+
+    .images {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -228,14 +231,15 @@ h1 {
 
     #Presentation {
         display: flex;
-        flex-direction:row;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         text-align: center;
     }
+
     .img {
         width: 50%;
-    
+
     }
 
     .txt {
@@ -302,8 +306,8 @@ h1 {
     }
 
     .contenedor-del-boton {
-        gap: 4rem;      
-      
+        gap: 4rem;
+
     }
 
     .cv {

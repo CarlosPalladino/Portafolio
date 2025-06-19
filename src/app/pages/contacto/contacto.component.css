@@ -11,7 +11,7 @@
 }
 
 .contacto article a i {
-    margin-right: 10px; /* Puedes ajustar el valor del margen según sea necesario */
+    margin-right: 10px; 
 }
 
 .contacto article {
@@ -114,8 +114,6 @@ p {
     .body {
         display: flex;
         margin: auto;
-        /* flex-direction: column; */
-        margin: 2rem;
         border-radius: 20px;
     }
 
@@ -133,7 +131,6 @@ p {
     .form {
         margin: auto;
         display: flex;
-        /* width: 70%; */
         border-radius: 2px;
     }
 }
