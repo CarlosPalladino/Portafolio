@@ -1,8 +1,8 @@
-/* General */
 #experiencia {
-    background-color: #1a202c; /* Fondo oscuro */
-    color: white; /* Texto claro */
+    background-color: #1a202c; 
+    color: white; 
     padding: 2rem 0;
+    background-image: radial-gradient(ellipse 50% 75% at 50% 47%, #7877c64d, #fff0);
 }
 
 .contenedor {
@@ -16,10 +16,8 @@
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 2rem;
-    color: #f7fafc; /* Blanco */
+    color: #f7fafc; 
 }
-
-/* Lista de experiencias */
 .experiencia-lista {
     display: flex;
     flex-direction: column;
@@ -27,7 +25,6 @@
     padding-left: 20px;
     overflow: hidden; 
 }
-
 .experiencia-item {
     position: relative;
     margin-bottom: 3rem;
@@ -38,26 +35,32 @@
     animation: aparecer 1s ease-out forwards;
 }
 
+.experiencia-item .certificado,.certificadoDH{
+  display: inline-block;
+  background-color: #00bcd4;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
 .experiencia-item:nth-child(1) {
     animation-delay: 0.5s; 
 }
-
 .experiencia-item:nth-child(2) {
     animation-delay: 1s; 
 }
-
 .experiencia-item:nth-child(3) {
     animation-delay: 1.5s; 
 }
-
 .experiencia-item:nth-child(4) {
     animation-delay: 2s; 
 }
-
 .experiencia-item:nth-child(5) {
     animation-delay: 2.5s; 
 }
-
 @keyframes aparecer {
     to {
         opacity: 1; 
@@ -122,24 +125,31 @@
     padding: 0.25rem 0.5rem;
     font-weight: bold;
     color: white; 
-    background-color: #4299e1; 
+    background-color: #17a2b8;
     border-radius: 999px; 
     cursor: pointer;
     text-decoration: none; 
 }
-
-.certificado:hover {
-    text-decoration: underline; /* Añade subrayado al pasar el mouse */
+.certificadoDH{
+        padding: 0.25rem 0.5rem;
 }
-
-
+.certificado:hover,.certificadoDH:hover {
+    text-decoration: underline; 
+}
 @media (min-width: 768px) {
+    #experiencia{
+    background-image: radial-gradient(ellipse 21% 75% at 50% 47%, #7877c64d, #fff0);
+    }
     .info-principal {
       flex-direction: unset;
       text-align: left;
       align-items: center;
     }
-  
-  }
-  
+     .experiencia-item .certificado{
+        margin-left: 5rem ;
 
+    }
+    .experiencia-item .certificadoDH{
+        margin-left: 1rem ;
+    }
+  }

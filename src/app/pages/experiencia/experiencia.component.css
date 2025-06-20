@@ -2,6 +2,7 @@
     background-color: #1a202c;
     color: white;
     padding: 2rem 0;
+    background-image: radial-gradient(ellipse 50% 75% at 50% 47%, #7877c64d, #fff0);
 }
 .contenedor {
     max-width: 1040px;
@@ -125,6 +126,9 @@
 
 }
 @media (min-width: 768px) {
+    #experiencia{
+          background-image: radial-gradient(ellipse 21% 75% at 50% 47%, #7877c64d, #fff0);
+    }
     .info-principal {
       flex-direction: unset;
       align-items: center;

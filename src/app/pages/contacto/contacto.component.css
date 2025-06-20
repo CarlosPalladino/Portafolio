@@ -1,19 +1,15 @@
 .body {
     color: whitesmoke;
 }
-
-
 .contacto {
     text-align: center;
     height: 15%;
     padding: 2rem;
     margin-top: 2rem;
 }
-
 .contacto article a i {
-    margin-right: 10px; 
+    margin-right: 10px;
 }
-
 .contacto article {
     display: flex;
     justify-content: space-around;
@@ -23,43 +19,50 @@
     border-radius: 5px;
     margin-top: 2rem;
 }
-
 #linkedin {
     display: flex;
     background: #00a0dc;
     justify-content: space-around;
 }
-
 #github {
     display: flex;
     justify-content: space-around;
-
-
     background: #373b41;
 }
-
 #emails {
     background: #e53e3e;
 }
-
 .contacto a {
     color: whitesmoke;
     text-decoration: none;
-
 }
-
 .form {
-    margin-top: 3rem;
     height: 45%;
     border-radius: 20px;
     padding: 2rem;
+    background-image: radial-gradient(ellipse 50% 75% at 50% 47%, #7877c64d, #fff0);
+}
+.form button {
+    display: block;
+    margin: 2rem;
+    padding: 0.5rem 2rem;
+    background-color: #17a2b8;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    margin: auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.form button:hover {
+    background-color: #138496;
 }
 
 span,
 p {
     font-style: italic;
 }
-
 @media (min-width: 768px) {
 
     .body {
@@ -72,15 +75,13 @@ p {
     label {
         text-align: center;
         color: whitesmoke;
-
     }
 
     .contact {
         margin-top: 8rem;
-        padding: 4rem;
+        padding: 2rem;
         height: 25%;
         gap: 1rem;
-    
         border-radius: 20px;
         font-size: 22px;
     }
@@ -94,6 +95,7 @@ p {
     }
 
     .form {
+        background-image: radial-gradient(ellipse 21% 75% at 50% 47%, #7877c64d, #fff0);
         height: 45%;
         padding: 4rem;
         border-radius: 20px;
@@ -101,13 +103,11 @@ p {
 
     .form p {
         color: black;
-
     }
 
     form button {
         align-items: center;
     }
-
 }
 
 @media(min-width: 1024px) {
@@ -116,7 +116,6 @@ p {
         margin: auto;
         border-radius: 20px;
     }
-
 
     .contacto {
         display: flex;
