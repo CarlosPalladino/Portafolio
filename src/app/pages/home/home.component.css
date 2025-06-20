@@ -76,21 +76,26 @@ h1 {
     box-shadow: 6px 6px 0 -1px var(--shadow-color, var(--jet));
     transition: var(--transition-1);
 }
+
 .carousel-item i {
     font-size: 5rem;
     width: 100%;
 }
+
 .cv {
     color: forestgreen;
     padding: 1rem;
     border-radius: 20px;
 }
+
 #about-me {
     margin: 2rem;
 }
+
 .Intro {
     color: white;
 }
+
 #about-me article {
     background-color: #231B3B !important;
     color: whitesmoke;
@@ -223,12 +228,55 @@ h1 {
 }
 
 @media(min-width:1024px) {
+.fondo-borroso {
+background-image: url("../Images/code.jpg") ;
+ position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: 0;
+}
+.presentation-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 1024px;
+  margin: auto;  
+  padding: 1rem;
+  gap: 5rem;
+z-index: 2;
+}
+.Intro{
+    color: red;
+    font-weight: normal;
+    line-height: 1.6;
+    white-space: pre-line;
+    padding: 0; 
 
-    .About h1 {
-        text-align: center;
-        padding: 1rem;
+}
+.perfil{
+    width: 30%;
+    text-align: center;
+}
+ .img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+}
+.txt {
+  text-align: center;
+}
+/* 
+    .Intro p {
+        padding: 6em 3em 3em 3em;
+        width: calc(100% - 30%);
     }
-
     #Presentation {
         display: flex;
         flex-direction: row;
@@ -258,7 +306,7 @@ h1 {
         margin: 0 auto;
         padding-right: 0.25em;
         animation: typing 6s steps(30, end), blink-caret 0.80s step-end infinite;
-    }
+    } */
 
     @keyframes typing {
         from {
@@ -363,9 +411,7 @@ h1 {
         font-size: 0.8rem;
         color: whitesmoke;
         position: absolute;
-        /* Posiciona el span de forma absoluta dentro del contenedor */
         bottom: -20px;
-        /* Ajusta esta posición según sea necesario */
         left: 50%;
         transform: translateX(-50%);
     }
