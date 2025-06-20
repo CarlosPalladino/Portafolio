@@ -115,6 +115,8 @@ p {
         display: flex;
         margin: auto;
         border-radius: 20px;
+            background-image: radial-gradient(ellipse 21% 70% at 50% 74%, #7877c64d, #fff0);
+
     }
 
     .contacto {

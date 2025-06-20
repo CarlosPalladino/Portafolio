@@ -63,7 +63,7 @@
     position: absolute;
     width: 12px;
     height: 12px;
-    background-color: #38a169;
+      background-color: #ed8936;
     border-radius: 50%;
     border: 2px solid white;
     left: -8px;
@@ -95,7 +95,7 @@
 .lugar {
     font-size: 1rem;
     font-weight: bold;
-    color: #f6ad55;
+    color: #ed8936; 
 }
 
 .duracion {
@@ -122,12 +122,11 @@
     font-size: 1.2rem;
 }
 .detalles span{
-        color: #f6ad55;
-
+color: #f6ad55;
 }
 @media (min-width: 768px) {
     #experiencia{
-          background-image: radial-gradient(ellipse 21% 75% at 50% 47%, #7877c64d, #fff0);
+     background-image: radial-gradient(ellipse 21% 70% at 50% 47%, #7877c64d, #fff0);
     }
     .info-principal {
       flex-direction: unset;
