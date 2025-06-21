@@ -1,8 +1,16 @@
+
 #experiencia {
     background-color: #1a202c;
     color: white;
     padding: 2rem 0;
-    background-image: radial-gradient(ellipse 50% 75% at 50% 47%, #7877c64d, #fff0);
+      display: block;
+  background: radial-gradient(ellipse 100% 100% at 50% 0%, #7877c64d, transparent),
+              radial-gradient(ellipse 100% 100% at 50% 100%, #7877c64d, transparent);
+  background-color: #0f0e17;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+    /* background-image: radial-gradient(ellipse 50% 75% at 50% 47%, #7877c64d, #fff0); */
 }
 .contenedor {
     max-width: 1040px;
@@ -125,9 +133,9 @@
 color: #f6ad55;
 }
 @media (min-width: 768px) {
-    #experiencia{
+    /* #experiencia{
      background-image: radial-gradient(ellipse 21% 70% at 50% 47%, #7877c64d, #fff0);
-    }
+    } */
     .info-principal {
       flex-direction: unset;
       align-items: center;

@@ -16,4 +16,20 @@ import { CertificacionesComponent } from "../certificaciones/certificaciones.com
 })
 export class HomeComponent {
 
+scrollToContacto() {
+  const contactoElement = document.getElementById('contacto');
+  if (contactoElement) {
+    contactoElement.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+descargarCV() {
+  const link = document.createElement('a');
+  link.href = 'assets/CV/CarlosPalladinoCv.pdf';
+  link.download = 'CarlosPalladinoCv.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
+
 }

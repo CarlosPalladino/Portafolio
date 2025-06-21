@@ -1,5 +1,24 @@
+/* :host {
+  display: block;
+  background: radial-gradient(ellipse 100% 100% at 50% 0%, #7877c64d, transparent),
+              radial-gradient(ellipse 100% 100% at 50% 100%, #7877c64d, transparent);
+  background-color: #0f0e17;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+} */
+
 .body {
     color: whitesmoke;
+     display: block;
+  background: radial-gradient(ellipse 100% 100% at 50% 0%, #7877c64d, transparent),
+              radial-gradient(ellipse 100% 100% at 50% 100%, #7877c64d, transparent);
+  background-color: #0f0e17;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+      min-height: 100vh; /* o un valor suficiente */
+
 }
 .contacto {
     text-align: center;
@@ -40,7 +59,7 @@
     height: 45%;
     border-radius: 20px;
     padding: 2rem;
-    background-image: radial-gradient(ellipse 50% 75% at 50% 47%, #7877c64d, #fff0);
+    /* background-image: radial-gradient(ellipse 50% 75% at 50% 47%, #7877c64d, #fff0); */
 }
 .form button {
     display: block;
@@ -95,7 +114,7 @@ p {
     }
 
     .form {
-        background-image: radial-gradient(ellipse 21% 75% at 50% 47%, #7877c64d, #fff0);
+        /* background-image: radial-gradient(ellipse 21% 75% at 50% 47%, #7877c64d, #fff0); */
         height: 45%;
         padding: 4rem;
         border-radius: 20px;
@@ -113,9 +132,9 @@ p {
 @media(min-width: 1024px) {
     .body {
         display: flex;
-        margin: auto;
-        border-radius: 20px;
-            background-image: radial-gradient(ellipse 21% 70% at 50% 74%, #7877c64d, #fff0);
+        /* margin: auto; */
+        /* border-radius: 20px; */
+        /* background-image: radial-gradient(ellipse 21% 70% at 50% 74%, #7877c64d, #fff0); */
 
     }
 
@@ -130,7 +149,7 @@ p {
     }
 
     .form {
-        margin: auto;
+        /* margin: auto; */
         display: flex;
         border-radius: 2px;
     }

@@ -16,7 +16,7 @@
         <article class="Acerca">
             <h2>Acerca de mí</h2>
                 <p>
-                    Empecé mi camino, como muchos, durante la pandemia. Desde entonces, fui aprendiendo múltiples áreas
+                    Empecé mi camino durante la pandemia. Desde entonces, fui aprendiendo múltiples áreas
                     de sistemas,
                     pasando por el desarrollo web hasta encontrar mi lugar como <strong>desarrollador backend
                         especializado en .NET</strong>.
@@ -24,14 +24,10 @@
         </article>
     </section>
     <article class="contenedor-del-boton">
-         <a href="app/pages/Images/CV/CarlosPalladinoCv.pdf" target="_blank">
-            <button class="buttons">¡Contactame!</button>
-        </a>
-        <a href="app/pages/Images/CV/CarlosPalladinoCv.pdf" target="_blank">
-            <button class="buttons">Descarga mi cv</button>
-        </a> 
-        <a href="app/pages/Images/CV/CarlosPalladinoCv.pdf" target="_blank">
-            <button class="buttons">Linkedin!</button>
+    <button (click)="scrollToContacto()" class="buttons">¡Mandame un Mail!</button>
+   <button (click)="descargarCV()" class="buttons">¡Descargar mi CV!</button>
+        <a href="https://www.linkedin.com/in/carlos-palladino/" target="_blank">
+            <button class="buttons">¡Visitame en Linkedin!</button>
         </a>
     </article>
     <article>
@@ -86,9 +82,6 @@
     <div>
         <app-certificaciones></app-certificaciones>
     </div>
-    <!-- <div id="proyecto">
-        <app-proyectos></app-proyectos>
-    </div> -->
     <div id="contacto">
         <app-contacto></app-contacto>
     </div>
