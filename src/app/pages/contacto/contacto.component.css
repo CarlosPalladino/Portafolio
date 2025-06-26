@@ -34,6 +34,7 @@
 .contacto p {
   font-style: italic;
   color: #ccc;
+  margin-top: 2rem;
 }
 
 .form {
@@ -75,16 +76,6 @@
   gap: 1rem;
 }
 
-/* Responsive a partir de tablets */
-@media (min-width: 768px) {
-  .form .row {
-    flex-direction: row;
-  }
-
-  .form .col {
-    flex: 1;
-  }
-}
 
 .form button {
   align-self: center;
@@ -102,3 +93,87 @@
   background-color: #e07a00;
   transform: scale(1.05);
 }
+@media (min-width: 768px) {
+  .body {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 6rem 4rem;
+    gap: 4rem;
+  }
+
+  .contacto {
+    max-width: 45%;
+    text-align: left;
+    padding: 2rem;
+  }
+
+  .contacto h2 {
+    font-size: 2.4rem;
+  }
+
+  .contacto p {
+    font-size: 1.5rem;
+    color: #cccccc;
+  }
+
+  .contacto-subtitle {
+    text-align: left;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  .form {
+    max-width: 600px;
+    width: 50%;
+    padding: 2.5rem;
+  }
+
+  .form .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .form .col {
+    flex: 1 1 calc(50% - 1rem);
+    min-width: 240px;
+  }
+
+  .form textarea {
+    min-height: 140px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .body {
+    padding: 8rem 6rem;
+    gap: 6rem;
+  }
+.contacto p{
+    font-size: 1rem;    
+}
+  .contacto h2 {
+    font-size: 2.8rem;
+  }
+
+  .contacto-subtitle {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+  }
+
+  .form {
+    max-width: 650px;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 1.1rem;
+  }
+
+  .form button {
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
+  }
+}
+
