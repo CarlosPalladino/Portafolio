@@ -1,156 +1,104 @@
-/* :host {
-  display: block;
-  background: radial-gradient(ellipse 100% 100% at 50% 0%, #7877c64d, transparent),
-              radial-gradient(ellipse 100% 100% at 50% 100%, #7877c64d, transparent);
-  background-color: #0f0e17;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-} */
-
 .body {
-    color: whitesmoke;
-     display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
   background: radial-gradient(ellipse 100% 100% at 50% 0%, #7877c64d, transparent),
               radial-gradient(ellipse 100% 100% at 50% 100%, #7877c64d, transparent);
   background-color: #0f0e17;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-      min-height: 100vh; /* o un valor suficiente */
-
+  color: whitesmoke;
+  gap: 2rem;
 }
+
+
 .contacto {
-    text-align: center;
-    height: 15%;
-    padding: 2rem;
-    margin-top: 2rem;
+  text-align: center;
+  max-width: 600px;
 }
-.contacto article a i {
-    margin-right: 10px;
+
+.contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
-.contacto article {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 6px 15px;
-    font-weight: 500;
-    border-radius: 5px;
-    margin-top: 2rem;
+.contacto-subtitle {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: whitesmoke;
+  margin-bottom: 1rem;
 }
-#linkedin {
-    display: flex;
-    background: #00a0dc;
-    justify-content: space-around;
+
+.contacto p {
+  font-style: italic;
+  color: #ccc;
 }
-#github {
-    display: flex;
-    justify-content: space-around;
-    background: #373b41;
-}
-#emails {
-    background: #e53e3e;
-}
-.contacto a {
-    color: whitesmoke;
-    text-decoration: none;
-}
+
 .form {
-    height: 45%;
-    border-radius: 20px;
-    padding: 2rem;
-    /* background-image: radial-gradient(ellipse 50% 75% at 50% 47%, #7877c64d, #fff0); */
-}
-.form button {
-    display: block;
-    margin: 2rem;
-    padding: 0.5rem 2rem;
-    background-color: #17a2b8;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    font-weight: bold;
-    margin: auto;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.form button:hover {
-    background-color: #138496;
+  width: 100%;
+  max-width: 600px;
+  background-color: #1a1a2e;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
 }
 
-span,
-p {
-    font-style: italic;
+.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
+
+/* Aplica en TODAS las resoluciones */
+.form input,
+.form textarea {
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: whitesmoke;
+  color: #1a202c;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #666;
+}
+
+.form .row {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Responsive a partir de tablets */
 @media (min-width: 768px) {
+  .form .row {
+    flex-direction: row;
+  }
 
-    .body {
-        justify-content: space-around;
-    }
-
-    body,
-    h3,
-    h4,
-    label {
-        text-align: center;
-        color: whitesmoke;
-    }
-
-    .contact {
-        margin-top: 8rem;
-        padding: 2rem;
-        height: 25%;
-        gap: 1rem;
-        border-radius: 20px;
-        font-size: 22px;
-    }
-
-    #linkedin,
-    #github,
-    #emails {
-        width: 50%;
-        margin: auto;
-        margin-top: 2rem;
-    }
-
-    .form {
-        /* background-image: radial-gradient(ellipse 21% 75% at 50% 47%, #7877c64d, #fff0); */
-        height: 45%;
-        padding: 4rem;
-        border-radius: 20px;
-    }
-
-    .form p {
-        color: black;
-    }
-
-    form button {
-        align-items: center;
-    }
+  .form .col {
+    flex: 1;
+  }
 }
 
-@media(min-width: 1024px) {
-    .body {
-        display: flex;
-        /* margin: auto; */
-        /* border-radius: 20px; */
-        /* background-image: radial-gradient(ellipse 21% 70% at 50% 74%, #7877c64d, #fff0); */
+.form button {
+  align-self: center;
+  padding: 0.8rem 2rem;
+  background-color: #ff8906;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
-    }
-
-    .contacto {
-        display: flex;
-        flex-direction: column;
-        width: 40%;
-        gap: 1rem;
-        justify-content: space-around;
-        color: #fff;
-        margin: auto;
-    }
-
-    .form {
-        /* margin: auto; */
-        display: flex;
-        border-radius: 2px;
-    }
+.form button:hover {
+  background-color: #e07a00;
+  transform: scale(1.05);
 }

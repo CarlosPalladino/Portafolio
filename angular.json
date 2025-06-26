@@ -28,7 +28,6 @@
               "src/app/pages/Images/Proyectos",
               "src/app/pages/Images/Tecnologias",
               "src/app/pages/Images/herramientas"
-
             ],
             "styles": [
               "src/styles.css",
@@ -36,9 +35,8 @@
               "node_modules/@fortawesome/fontawesome-free/css/all.css"
             ],
             "scripts": [
-            "node_modules/bootstrap/dist/js/bootstrap.min.js",
-            "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-              
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
           },
           "configurations": {
@@ -51,8 +49,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "4kb",
+                  "maximumError": "6kb"
                 }
               ],
               "outputHashing": "all"

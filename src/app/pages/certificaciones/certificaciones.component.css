@@ -1,12 +1,4 @@
-/* :host {
-  display: block;
-  background: radial-gradient(ellipse 100% 100% at 50% 0%, #7877c64d, transparent),
-              radial-gradient(ellipse 100% 100% at 50% 100%, #7877c64d, transparent);
-  background-color: #0f0e17;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-} */
+
 
 #experiencia {
     background-color: #1a202c;
@@ -19,7 +11,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-    /* background-image: radial-gradient(ellipse 50% 75% at 50% 47%, #7877c64d, #fff0); */
 }
 
 .contenedor {
@@ -149,7 +140,6 @@
     font-weight: normal;
     line-height: 1.6;
     white-space: pre-line;
-    color: #e2e8f0;
 }
 
 
@@ -163,17 +153,6 @@
 }
 
 @media (min-width: 768px) {
-
-    /* #experiencia {
-        background-image: radial-gradient(ellipse 21% 75% at 50% 47%, #7877c64d, #fff0);
-    } */
-
-    /* .info-principal {
-      flex-direction: unset;
-      text-align: left;
-      align-items: center;
-      gap: 1rem;
-    } */
     .info-principal {
         display: grid;
         grid-template-columns: 80px 165px 142px 89px;
@@ -182,6 +161,5 @@
         margin-bottom: 0.5rem;
         font-size: 1rem;
     }
-
 
 }
