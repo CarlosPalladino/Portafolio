@@ -1,28 +1,26 @@
 <div class="About">
-    <section id="Presentation">
-          <div class="fondo-borroso"></div>
-        <div class="presentation-container">
-            <article class="img-container">
-                <div class="txt">
-                    <div class="pefil">
-                        <img src="app/pages/Images/FotoFondo.jpg" class="img" alt="Foto de perfil">
-                    </div>                  
-                </div>
-            </article>
-            <article class="Intro">                
-                <h2>Soy Charlie. Desarrollador .Net Autodidacta y Emprendedor</h2>                              
-            </article>            
-        </div>
-        <article class="Acerca">
-            <h2>Acerca de mí</h2>
-                <p>
-                    Empecé mi camino durante la pandemia. Desde entonces, fui aprendiendo múltiples áreas
-                    de sistemas,
-                    pasando por el desarrollo web hasta encontrar mi lugar como <strong>desarrollador backend
-                        especializado en .NET</strong>.
-                </p>
-        </article>
-    </section>
+<section id="Presentation">
+  <div class="fondo-borroso"></div>
+  <div class="presentation-container">
+    <article class="img-container">
+      <img src="app/pages/Images/FotoFondo.jpg" class="perfil-img" alt="Foto de perfil">
+    </article>
+
+    <article class="Intro">
+      <h1>¡Hola! Soy <span class="nombre">Charlie</span></h1>
+      <h2 class="subtitulo">Desarrollador .NET | Autodidacta | Emprendedor</h2>
+    </article>
+  </div>
+
+  <article class="Acerca">
+    <h2>Acerca de mí</h2>
+    <p>
+      Empecé mi camino durante la pandemia. Desde entonces, fui aprendiendo múltiples áreas del mundo IT, 
+      desde el desarrollo web hasta encontrar mi pasión como <strong>desarrollador backend especializado en .NET</strong>.
+    </p>
+  </article>
+</section>
+
     <article class="contenedor-del-boton">
     <button (click)="scrollToContacto()" class="buttons">¡Mandame un Mail!</button>
    <button (click)="descargarCV()" class="buttons">¡Descargar mi CV!</button>
@@ -85,5 +83,6 @@
     <div id="contacto">
         <app-contacto></app-contacto>
     </div>
+    <!-- <h3>© 2025 Carlos Palladino todos los derechos reservados.</h3> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </div>

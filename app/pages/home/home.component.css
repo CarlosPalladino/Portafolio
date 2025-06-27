@@ -13,6 +13,82 @@
   background-attachment: fixed;
 }
 #Presentation {
+  position: relative;
+  padding: 4rem 1rem;
+  /* background: radial-gradient(circle at top, #4b4b9c44, transparent),
+              radial-gradient(circle at bottom, #4b4b9c44, transparent); */
+  text-align: center;
+  /* color: #fff; */
+  z-index: 1;
+}
+
+.presentation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  z-index: 2;
+  position: relative;
+}
+
+.perfil-img {
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  transition: transform 0.4s ease;
+}
+.perfil-img:hover {
+  transform: scale(1.05);
+}
+
+.Intro h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.Intro .nombre {
+  color: #ff8906;
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.1);
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  color: #dcdcdc;
+  font-style: italic;
+}
+
+.Acerca {
+  margin-top: 4rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.fondo-borroso {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background-image: url("../Images/code.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px) brightness(0.5);
+  z-index: 0;
+}
+
+
+#Presentation {
     display: flex;
     flex-direction: column;
     color: white;
@@ -252,7 +328,9 @@ h1 {
 
 @media(min-width:1024px) {
 
- 
+ .About h2 {
+    margin-top: 0;
+ }
     .fondo-borroso {
         background-image: url("../Images/code.jpg");
         position: absolute;
@@ -293,6 +371,7 @@ h1 {
         max-width: 800px;
         margin: auto;
         text-align: justify;
+        margin-top: 3rem;
     }
 
     .Acerca p {
@@ -358,13 +437,13 @@ h1 {
     }
 
     .contenedor-del-boton {
-        gap: 10px;
+        gap: 3rem;
     }
 
     .buttons {
         color: #1a202c;
         border-radius: 9999px;
-        /* box-shadow: 0 4px 6px rgba(0, 128, 0, 0.5); */
+        
         justify-content: space-around;
         cursor: pointer;
         font-weight: 700;
@@ -420,7 +499,6 @@ h1 {
 
     .images div:hover span {
         display: block;
-
         color: orange;
         transition: color 0.3s ease;
     }

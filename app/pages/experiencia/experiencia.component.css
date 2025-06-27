@@ -78,12 +78,21 @@
     top: 5px;
 }
 .info-principal {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: column;
+    align-items: left   ;
     font-size: 1rem;
     margin-bottom: 0.5rem;
-    gap:1rem
+    gap:1rem; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+
 }
 
 .anios {
