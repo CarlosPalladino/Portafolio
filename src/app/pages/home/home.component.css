@@ -8,6 +8,11 @@
     background-size: cover;
     background-attachment: fixed;
 }
+.About h2 {
+    color:  white;
+    text-align:center;
+    margin-top: 2rem;
+}
 #Presentation {
     position: relative;
     padding: 4rem 1rem;
@@ -361,7 +366,7 @@
         font-size: large;
         max-width: 800px;
         margin: auto;
-        margin-top: 3rem;
+        margin-top: 6rem;
     }
 
     .Acerca p {
