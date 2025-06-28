@@ -6,68 +6,62 @@
       <h1 class="titulo">EXPERIENCIA LABORAL</h1>
      <ol class="experiencia-lista">
   <!-- Trabajo 1 (más reciente) -->
-  <li class="experiencia-item">
-    <div class="punto"></div>
-    <div class="info-principal">
-      <span class="anios">06/2024 - 05/2025</span>
-      <span class="titulo-trabajo">Desarrollador .NET</span>
-      <span class="separador"></span>
-      <span class="lugar">Valkimia/</span>
-    </div>
- 
+ <li class="experiencia-item">
+  <div class="punto"></div>
+  <div class="info-principal">
+    <span class="anios">06/2024 - 05/2025</span>
+    <span class="titulo-trabajo">Desarrollador .NET</span>
+    <span class="separador"></span>
+    <span class="lugar">Valkimia</span>
+  </div>
+
   <span class="celula">Célula Geia:</span>
   <p class="detalles">
-    Desarrollé asistentes de inteligencia artificial utilizando <span>Globant Enterprise AI</span>, integrados con <span>.NET Core 8</span> y <span>Jira</span> para el análisis de documentación técnica mediante <span>Cadena de Pensamiento</span>.
-    <br class="tecnologias">
+    Integré <strong>asistentes de inteligencia artificial</strong> desarrollados con <span>Globant Enterprise AI</span> a APIs internas en <span>.NET 8</span>. Implementé <strong>lógica de análisis de tickets y documentos técnicos</strong> utilizando <span>Cadena de Pensamiento</span> conectada a <span>Jira</span> vía API REST.
   </p>
 
   <span class="celula">Célula Dashboard X:</span>
   <p class="detalles">
-    Llevé adelante mejoras evolutivas enfocadas en asegurar la correcta utilización de datos sensibles por producto y por fecha.
-    <br class="tecnologias">
+    Refactoricé controladores y servicios para <strong>mejorar la consistencia de filtros por fecha y productos</strong>. Detecté y resolví problemas de duplicación lógica y validación de parámetros usando <span>FluentValidation</span> y <span>DTOs mapeados con AutoMapper</span>.
   </p>
 
   <span class="celula">Célula Billetera:</span>
   <p class="detalles">
-    Implementé pruebas <span>unitarias e integradoras con NUnit</span> para validar el funcionamiento de las colas de mensajería encargadas del procesamiento de transacciones.
-    <br class="tecnologias">
+    Desarrollé y ejecuté pruebas <strong>unitarias e integradoras en colas de mensajería críticas</strong> mediante <span>NUnit</span> y <span>Mocks personalizados</span>. Validé escenarios de concurrencia, errores y reintentos simulando flujos de transacciones reales. Incorporé logs con <span>Serilog</span> y métricas básicas para trazabilidad.
   </p>
-  </li>
+</li>
 
-  <!-- Trabajo 2 -->
-  <li class="experiencia-item">
-    <div class="punto"></div>
-    <div class="info-principal">
-      <span class="anios">03/2023 - 12/2024</span>
-      <span class="titulo-trabajo">Desarrollador .NET Full Stack</span>
-      <span class="separador"></span>
-      <span class="lugar">TvSim</span>
-      <span class="separador"></span>
-      <span class="lugar">Freelance</span>
-    </div>
-    <p class="detalles">
-      Rediseñé la obtención de datos reemplazando consultas embebidas por el uso de <span>Linq</span> y <span>DTOs</span> para evitar redundancias y mejorar la legibilidad del código.<br>
-      Además, diseñé y desarrollé funcionalidades para múltiples capítulos reutilizando la lógica del capítulo piloto, incluyendo locaciones, elenco y costos por capítulo.
-    </p>
-  </li>
+<li class="experiencia-item">
+  <div class="punto"></div>
+  <div class="info-principal">
+    <span class="anios">03/2023 - 12/2024</span>
+    <span class="titulo-trabajo">Desarrollador .NET Full Stack</span>
+    <span class="separador"></span>
+    <span class="lugar">TvSim</span>
+    <span class="separador"></span>
+    <span class="lugar">Freelance</span>
+  </div>
+  <p class="detalles">
+    Refactoricé múltiples módulos backend reemplazando <strong>consultas Dapper directas por LINQ</strong> sobre <span>EF Core</span>, aplicando <span>DTOs</span> para desacoplar el modelo. <br>
+    Implementé lógica para reutilización de datos del capítulo piloto (locaciones, cast, costos), evitando duplicaciones y escalando eficientemente la estructura de producción audiovisual. <br>
+    Además, colaboré con ajustes de UI en base a feedback funcional.
+  </p>
+</li>
 
-  <!-- Trabajo 3 (más antiguo) -->
-  <li class="experiencia-item">
-    <div class="punto"></div>
-    <div class="info-principal">
-      <span class="anios">04/2022 - 10/2024</span>
-      <span class="titulo-trabajo">Desarrollador WinForms</span>
-      <span class="separador"></span>
-      <span class="lugar">Dinos Gym</span>
-      <!-- <span class="separador"></span> -->
-      <span class="lugar">Freelance</span>
-
-    </div>
-    <p class="detalles">
-      Diseñé e implementé una aplicación de escritorio para la gestión de usuarios, rutinas y ventas en un gimnasio utilizando <span>WinForms</span> y <span>.NET Framework 4.8</span>.<br>
-      Integré una base de datos en <span>SQL Server</span> con funcionalidad de respaldo automático y desarrollé exportaciones a <span>Excel</span> para facilitar el control de datos.
-    </p>
-  </li>
+<li class="experiencia-item">
+  <div class="punto"></div>
+  <div class="info-principal">
+    <span class="anios">04/2022 - 10/2024</span>
+    <span class="titulo-trabajo">Desarrollador WinForms</span>
+    <span class="separador"></span>
+    <span class="lugar">Dinos Gym</span>
+    <span class="lugar">Freelance</span>
+  </div>
+  <p class="detalles">
+    Diseñé una solución de escritorio completa para <strong>gestión de socios, rutinas y ventas</strong> en un gimnasio. Utilicé <span>WinForms</span> y <span>.NET Framework 4.8</span> con una base de datos en <span>SQL Server</span>.<br>
+    Añadí <strong>backups automáticos</strong>, <strong>exportación a Excel</strong> con <span>ClosedXML</span> y lógica de control de acceso básico por roles. Toda la solución fue implementada y entregada de forma individual.
+  </p>
+</li>
 </ol>
     </div>
   </div>

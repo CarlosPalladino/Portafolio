@@ -129,14 +129,14 @@
 }
 
 .duracion {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #f6ad55;
 }
 
 .detalles {
     margin: 0.5rem 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: normal;
     line-height: 1.6;
     white-space: pre-line;
