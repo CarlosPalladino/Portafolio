@@ -8,11 +8,12 @@
     background-size: cover;
     background-attachment: fixed;
 }
+
 .About h2 {
-    color:  white;
-    text-align:center;
-    margin-top: 2rem;
+    color: white;
+    text-align: center;
 }
+
 #Presentation {
     position: relative;
     padding: 4rem 1rem;
@@ -28,6 +29,7 @@
     z-index: 2;
     position: relative;
 }
+
 .perfil-img {
     height: 180px;
     object-fit: cover;
@@ -35,30 +37,37 @@
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
     transition: transform 0.4s ease;
 }
+
 .perfil-img:hover {
     transform: scale(1.05);
 }
+
 .Intro h1 {
     font-size: 2.2rem;
     font-weight: 700;
     margin: 0;
 }
+
 .Intro .nombre {
     color: #ff8906;
     text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.1);
 }
+
 .subtitulo {
-  display: flex; /* ESTA LÍNEA ES FUNDAMENTAL */
-  flex-direction: column;
-  gap: 0.5rem;
-  text-align: center;
-  font-size: 1.2rem;
-  color: #dcdcdc;
-  font-style: italic;
+    display: flex;
+    /* ESTA LÍNEA ES FUNDAMENTAL */
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #dcdcdc;
+    font-style: italic;
 }
+
 .subtitulo span:last-child::after {
     content: "";
 }
+
 .Acerca {
     margin-top: 4rem;
     background-color: rgba(255, 255, 255, 0.05);
@@ -78,9 +87,9 @@
     color: white;
     text-align: center;
 }
+
 .About h1 {
     text-align: center;
-    margin-top: 2rem;
     color: #ffff;
     font-weight: bold;
 }
@@ -100,6 +109,7 @@
     border-radius: 34%;
     margin-top: 1rem;
 }
+
 .carousel-item img {
     display: block;
     margin-left: auto;
@@ -111,6 +121,7 @@
     font-size: 8rem;
     height: auto;
 }
+
 .presentation-container {
     position: relative;
     overflow: hidden;
@@ -120,12 +131,13 @@
     align-items: center;
     justify-content: center;
 }
+
 .fondo-borroso {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 50%;
+    height: 5%;
     background-image: url("../Images/code.jpg");
     background-size: cover;
     background-position: center;
@@ -161,7 +173,6 @@
     font-weight: bold;
     border-radius: 20px;
     width: 13rem;
-
 }
 
 #about-me {
@@ -228,36 +239,48 @@
     transition: color 0.3s ease;
 }
 
+.iconos {
+    margin-top: 3rem;
+}
+
+.iconos h2 {
+    margin-top: 2rem;
+}
+
 @media(min-width:768px) {
 
     #Presentation {
         display: flex;
         flex-direction: column;
     }
- .subtitulo {
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
-  }
 
-  .subtitulo span::after {
-    content: "|";
-    margin-left: 1rem;
-    color: orange;
-  }
+    .subtitulo {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
 
-  .subtitulo span:last-child::after {
-    content: "";
-  }
+    .subtitulo span::after {
+        content: "|";
+        margin-left: 1rem;
+        color: orange;
+    }
+
+    .subtitulo span:last-child::after {
+        content: "";
+    }
+
     .contenedor-del-boton {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
+
     .fondo-borroso {
-        height: 56%;
+        height: 60%;
     }
+
     .txt {
         margin-top: 1rem;
         text-align: center;
@@ -286,7 +309,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
+        gap: 6px;
     }
 
     .images div {
@@ -295,6 +318,9 @@
         margin: 10px;
     }
 
+    .perfil-img{
+        height: 250px;
+    }
     .images img {
         filter: grayscale(100%);
         transition: filter 0.3s ease;
@@ -379,6 +405,7 @@
         width: 30%;
         text-align: center;
     }
+
     .subtitulo {
         flex-direction: row;
         justify-content: center;
@@ -407,6 +434,7 @@
     .txt {
         text-align: center;
     }
+
     @keyframes typing {
         from {
             width: 0;

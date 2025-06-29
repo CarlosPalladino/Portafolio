@@ -4,7 +4,7 @@
   align-items: center;
   padding: 2rem 2rem;
   background: radial-gradient(ellipse 100% 100% at 50% 0%, #7877c64d, transparent),
-              radial-gradient(ellipse 100% 100% at 50% 100%, #7877c64d, transparent);
+    radial-gradient(ellipse 100% 100% at 50% 100%, #7877c64d, transparent);
   background-color: #0f0e17;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,6 +23,7 @@
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
+
 .contacto-subtitle {
   text-align: center;
   font-size: 1.4rem;
@@ -35,6 +36,8 @@
   font-style: italic;
   color: #ccc;
   margin-top: 2rem;
+  font-size: 1.2rem;
+
 }
 
 .form {
@@ -92,23 +95,21 @@
   background-color: #e07a00;
   transform: scale(1.05);
 }
+
 @media (min-width: 768px) {
   .body {
-    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 6rem 4rem;
-    gap: 4rem;
+    padding: 1rem 2rem;
+    gap: 3rem;
+    align-items: center;
   }
 
   .contacto {
     max-width: 45%;
-    text-align: left;
-    padding: 2rem;
   }
 
   .contacto h2 {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 
   .contacto p {
@@ -124,7 +125,7 @@
 
   .form {
     max-width: 600px;
-    width: 50%;
+    width: 75%;
     padding: 2.5rem;
   }
 
@@ -146,14 +147,23 @@
 
 @media (min-width: 1024px) {
   .body {
-    padding: 8rem 10rem;
+    padding: 1rem 5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+
   }
-  .contacto{
+
+  .contacto {
     text-align: center;
   }
-.contacto p{
-    font-size: 1.5rem;    
-}
+
+  .contacto p {
+    font-size: 1.5rem;
+  }
+
   .contacto h2 {
     font-size: 2.8rem;
   }
@@ -177,4 +187,3 @@
     padding: 1rem 2.5rem;
   }
 }
-

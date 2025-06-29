@@ -24,7 +24,9 @@
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 2rem;
+    margin-top: 2rem;
     color: #f7fafc;
+    
 }
 
 .experiencia-lista {
@@ -140,6 +142,7 @@
     font-weight: normal;
     line-height: 1.6;
     white-space: pre-line;
+    text-align: justify;
 }
 
 
@@ -155,8 +158,8 @@
 @media (min-width: 768px) {
     .info-principal {
         display: grid;
-        grid-template-columns: 80px 165px 142px 89px;
-        column-gap: 1rem;
+        grid-template-columns: 79px 90px 122px 90px;   
+     column-gap: 1rem;
         align-items: center;
         margin-bottom: 0.5rem;
         font-size: 1rem;
